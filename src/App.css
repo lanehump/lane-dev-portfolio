@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.background {
+  background-color: #000000;
+  opacity: 0.8;
+  background-image:  linear-gradient(#ddd9d9 1.5px, transparent 1.5px), linear-gradient(to right, #ddd9d9 1.5px, #000000 1.5px);
+  background-size: 80px 80px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: space-around;
+  height: 75vh;           
+}
+
+
+
+#header {
+  font-size: 50px;
+  display: flex;
+}
+
