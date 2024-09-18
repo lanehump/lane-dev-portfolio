@@ -6,7 +6,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
     background-color: #1a1a1a;
-    margin: 5px;
   }
   
   .contact:hover {

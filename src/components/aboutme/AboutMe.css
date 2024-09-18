@@ -1,20 +1,19 @@
 .aboutme {
-    display: flex;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-    height: 600px;
-    max-width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-    background-color: #1a1a1a;
-    margin: 5px;
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  background-color: #1a1a1a;
+  top: 120px;
+  height: 500px;
   }
 
-  .header {
-    display: flex;
+  .aboutMeHeader {
     position: relative;
-    justify-content: flex-start;
+    top: -30px;
   }
   
   .aboutme:hover {
