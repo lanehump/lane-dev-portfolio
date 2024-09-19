@@ -1,3 +1,20 @@
 .projects-container {
-    display: flex;
+  display: flex;
+  min-width: 500px;
+  max-width: 50%;
+  height: auto;
+  justify-content: space-between;
+
+  .project-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s;
+    background-color: rgba(26, 26, 26, 0.7);
+    width: 240px;
+  }
+  .project-item:hover {
+    transform: scale(1.05);
+  }
 }
