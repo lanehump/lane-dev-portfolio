@@ -12,19 +12,26 @@ body {
   background-size: 80px 80px;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(200px, 1fr)
-  ); /* Responsive columns */
-  gap: 20px; /* Space between the cards */
-  padding: 20px; /* Padding inside the container */
-  height: 40vh;
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  height: auto;
+  width: 100vh;
+  max-width: 800px;
+  min-height: 40vh;
+  max-height: 100vh;
+  position: relative;
   top: 80px;
-  justify-content: center; /* Align cards horizontally */
-  align-content: start; /* Ensure cards are aligned from the top */
+  justify-content: center;
 }
 
 #header {

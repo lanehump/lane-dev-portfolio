@@ -1,5 +1,5 @@
 import "./header.css";
-import lol from "./lol.jpg";
+import { lol } from "../../assets";
 
 const Header = () => {
   return (
