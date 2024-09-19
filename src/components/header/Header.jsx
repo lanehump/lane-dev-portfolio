@@ -1,19 +1,19 @@
-import "./header.css"
-import lol from "./lol.jpg"
-
+import "./header.css";
+import lol from "./lol.jpg";
 
 const Header = () => {
-    return (
-        <>
-        <div className="card">
-            <h1 className="header" >Welcome</h1>
-
-            <p className="card-description">Hi, I'm Lane, a software developer with ever growing passion for all things technology.</p>
-
-            <img src={lol} alt = "lol" className="card-image"/>
+  return (
+    <div className="card">
+      <img src={lol} alt="lol" className="card-image" />
+      <div className="card-content">
+        <h1>Welcome</h1>
+        <div>
+          Hi, I'm Lane, a software developer with an ever-growing passion for
+          all things technology.
         </div>
-        </>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
 export default Header;

@@ -1,13 +1,11 @@
-import { useState } from 'react'
-import './App.css'
-import "./style.css"
-import Header from './components/header/Header'
-import Contact from './components/contact/Contact'
-import AboutMe from './components/aboutme/AboutMe'
+import { useState } from "react";
+import "./App.css";
+import "./style.css";
+import Header from "./components/header/Header";
+import Contact from "./components/contact/Contact";
+import AboutMe from "./components/aboutme/AboutMe";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div>
       <body>
@@ -17,13 +15,12 @@ function App() {
           <span></span>
         </section>
       </body>
-      <div className='container'>
+      <div className="container">
         <Header />
-        <AboutMe/>
-        <Contact />
+        <AboutMe />
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,50 +1,35 @@
 .card {
-  position: relative;
-  right: 20px;
   display: flex;
+  flex-direction: row;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s;
-  background-color: #1a1a1a;
-  opacity: 0.7;
-  width: 600px;
-  }
+  background-color: rgba(26, 26, 26, 0.7);
+  width: auto; /* Allow the card width to expand based on content */
+  min-width: 500px; /* Ensure the card has a minimum width */
+  max-width: 100%; /* Ensure the card does not exceed the container width */
+  max-height: 300px;
+  overflow: hidden; /* Ensures content does not overflow */
+}
 
-  .header {
-    position: relative;
-    top: -30px;
-    right: -35px;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card-image {
-    height: 220px;
-    width: 70%;
-    border-radius: 8px 8px 0 0;
-    position: relative;
-    top: -5px;
-  }
-  
-  .card-content {
-    padding: 16px;
-  }
-  
-  .card-title {
-    font-size: 1.5rem;
-    margin: 0;
-    margin-bottom: 8px;
-  }
-  
-  .card-description {
-    position: relative;
-    top: 60px;
-    left: -25%;
-    font-size: 1rem;
-  }
+.card-image {
+  height: auto; /* Adjust height based on content */
+  width: auto; /* Adjust width based on content */
+  max-width: 40%; /* Ensure image does not exceed card width */
+  object-fit: cover; /* Cover the image area without distortion */
+  border-radius: 8px; /* Optional: Add rounded corners if needed */
+}
 
-  
+.card-content {
+  flex-grow: 1; /* Allows the content to take up remaining space */
+  padding-left: 16px; /* Space between image and content */
+  display: flex;
+  flex-direction: column; /* Stack the title and description vertically */
+  justify-content: center; /* Center content vertically */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
