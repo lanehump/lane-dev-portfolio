@@ -8,8 +8,7 @@
   transition: transform 0.4s;
   background-color: rgba(26, 26, 26, 0.7);
   width: auto;
-  min-width: 500px;
-  max-width: 50%;
+  max-width: 60%;
   max-height: 150px;
 }
 
